@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PokeJson</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href=""><img src="src/fundoDeTela/Pokebolapng.png" alt="pokebola" id="pokeBolaLogo"></a>
+            </div>
+            <p><a href="">Sobre o projeto</a></p>
+        </nav>
+        <hr>
+    </header>
+    <div class="container">
+        
+        <div id="miniGame">
+            <div id="pokemonInicial">
+            </div>
+            <div id="botoesAcao">
+                <button class="botao" id="pikachu" onclick="pokemonSelecionado('pikachu')">Pikachu</button>
+                <button class="botao" id="bulbasaur" onclick="pokemonSelecionado('Bulbassauro')">Bulbassauro</button>
+                <button class="botao" id="Charmander" onclick="pokemonSelecionado('Charmander')">Charmander</button>
+                <button class="botao" id="Squirtle" onclick="pokemonSelecionado('Squirtle')">Squirtle</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
