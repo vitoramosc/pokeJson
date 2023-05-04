@@ -33,8 +33,8 @@ function atualizarStatus(pokemon){
     atributos.innerHTML= `
     <div class="statusPokemon">
         <ul id="atributosPokemon">
-            <li>${pokemon}</li>
-            <li>Lvl ${pokemonEscolhido.level}</li>
+            <b><li>${pokemon}</li></b>
+            <li>Lvl &nbsp; <b>${pokemonEscolhido.level}</b></li>
         </ul>
     </div>
     <div class="atributos">

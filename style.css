@@ -1,14 +1,27 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-fire-red');
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: 'Pokemon Fire Red', sans-serif;
+    font-size: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+a :visited{
+    color: #000000;
 }
 
 body{
     background-image: url(src/fundoDeTela/wallpaper\ pokejason.jpg);
     background-repeat: no-repeat;
     background-size: auto;
-    
 }
 
 ul{
@@ -20,6 +33,18 @@ ul{
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+}
+
+.navbar .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#pokeJsonLogo{
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 24px;
 }
 
 #pokeBolaLogo{
@@ -59,7 +84,7 @@ ul{
     display: flex;
     justify-content: center;
     gap: 10px;
-    
+    font-family: 'pokemon';
 }
 
 .container #miniGame #botoesAcao .botao{
@@ -103,7 +128,7 @@ ul{
     background-color: #ff0000;
     border-radius: 10px;
     height: 100%;
-    width: 100%;
+    width: percentualVida;
     overflow-y: hidden; 
 }
 
@@ -112,7 +137,7 @@ ul{
     background-color: #0091ff;
     border-radius: 10px;
     height: 100%;
-    width: 40%;
+    width: percentualVida;
     overflow-y: hidden; 
 }
 
@@ -121,7 +146,7 @@ ul{
     background-color: #fff700;
     border-radius: 10px;
     height: 100%;
-    width: 40%;
+    width: percentualFome;
     overflow-y: hidden; 
 }
 
@@ -133,5 +158,3 @@ ul{
     border-radius: 10px;
     
 }
-
-
