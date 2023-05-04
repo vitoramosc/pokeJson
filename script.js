@@ -1,5 +1,5 @@
 function pokemonSelecionado(pokemon){
-    if(pokemon == 'pikachu'){
+    if(pokemon == 'Pikachu'){
         pokemonInicial.innerHTML = `<img src="src/Pokemons/Pikachu/pikachu.gif" id="pokemonSprite">`
     }
     if(pokemon == 'Bulbassauro'){
@@ -11,23 +11,37 @@ function pokemonSelecionado(pokemon){
     if(pokemon == 'Squirtle'){
         pokemonInicial.innerHTML = `<img src="src/Pokemons/Squirtle/squirtle.gif" id="pokemonSprite">`
     }
-    botoesAcao.innerHTML =`
-    <button class="botao" id="alimentar">Alimentar</button>
-    <button class="botao" id="darBanho">Dar Banho</button>
-    <button class="botao" id="brincar">Brincar</button>
-    <button class="botao" id="passear">Batalhar</button>
-    `
-    atributos.innerHTML= `<ul>
-    <li>Nome</li>
-    </ul>`
-    return pokemon;
-}
+    atualizarStatus(pokemon)}
 
-var pokemon = {
-    nome: pokemonSelecionado(),
+
+var pokemonEscolhido = {
     level: 1,
     percentualVida: 100,
     percentualSujeira: 0,
     percentualFome: 0,
 }
 
+
+
+function atualizarStatus(pokemon){
+    botoesAcao.innerHTML =`
+    <button class="botao" id="alimentar">Alimentar</button>
+    <button class="botao" id="darBanho">Dar Banho</button>
+    <button class="botao" id="brincar">Brincar</button>
+    <button class="botao" id="passear">Batalhar</button>
+    `
+    atributos.innerHTML= `
+    <div class="statusPokemon">
+        <ul id="atributosPokemon">
+            <li>${pokemon}</li>
+            <li>Lvl ${pokemonEscolhido.level}</li>
+        </ul>
+    </div>
+    <div class="atributos">
+        <ul id="atributosPokemon2">
+            <div class="percentuais">Vida:<li class="barra"><span id="percentualVida"></span></li></div>
+            <div class="percentuais">Sujeira:<li class="barra"><span id="percentualSujeira"></span></li></div>
+            <div class="percentuais">Fome:<li class="barra"><span id="percentualFome"></span></li></div>
+        </ul>
+    </div>`
+}

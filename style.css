@@ -11,6 +11,10 @@ body{
     
 }
 
+ul{
+    list-style: none;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -71,9 +75,7 @@ body{
 }
 
 .container #miniGame #atributos{
-    display: flex;
     justify-content: center;
-    
     margin: 10px;
     border: solid 2px black;
     background-color: #fff78a;
@@ -81,5 +83,55 @@ body{
     width: 250px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding: 15px;
     
 }
+
+.container #miniGame #atributos #atributosPokemon{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container #miniGame #atributos #atributosPokemon2 .percentuais{
+    display: flex;
+    
+}
+
+.container #miniGame #atributos #atributosPokemon2 #percentualVida{
+    display: block;
+    background-color: #ff0000;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden; 
+}
+
+.container #miniGame #atributos #atributosPokemon2 #percentualSujeira{
+    display: block;
+    background-color: #0091ff;
+    border-radius: 10px;
+    height: 100%;
+    width: 40%;
+    overflow-y: hidden; 
+}
+
+.container #miniGame #atributos #atributosPokemon2 #percentualFome{
+    display: block;
+    background-color: #fff700;
+    border-radius: 10px;
+    height: 100%;
+    width: 40%;
+    overflow-y: hidden; 
+}
+
+.container #miniGame #atributos #atributosPokemon2 .barra{
+    height: 10px;
+    width: 100%;
+    border: 2px solid black;
+    margin: 3px;
+    border-radius: 10px;
+    
+}
+
+
