@@ -20,6 +20,14 @@ function pokemonSelecionado(pokemon){
     atributos.innerHTML= `<ul>
     <li>Nome</li>
     </ul>`
+    return pokemon;
 }
 
+var pokemon = {
+    nome: pokemonSelecionado(),
+    level: 1,
+    percentualVida: 100,
+    percentualSujeira: 0,
+    percentualFome: 0,
+}
 
